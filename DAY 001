@@ -1,0 +1,11 @@
+from itertools import combinations
+k=int(input("Enter desired sum value : "))
+l=list(map(int,input("Enter elements of a list : ").split()))
+if(len(l)<2):
+    print("List must have atleast two elements ") 
+r=combinations(l,2)
+for i in r:
+    if(sum(i)==k):
+        print("True")
+        exit(0)
+print("False")
