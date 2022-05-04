@@ -1,0 +1,10 @@
+l=list(map(int,input("Enter the elements of a list : ").split()))
+t=[]
+for i in range(len(l)):
+    r=1
+    for j in range(len(l)):
+        if(i==j):
+            continue 
+        r*=l[j]
+    t.append(r) 
+print(t)
