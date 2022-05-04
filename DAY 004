@@ -1,0 +1,15 @@
+a=list(map(int,input().split()))
+for i in a:
+    if i<=0:
+        a.remove(i)
+a.sort()
+for i in range(len(a)-1):
+    if a[i+1]-a[i]==0 or a[i+1]-a[i]==1 :
+        continue 
+    else:
+        t=a[i]+1
+        print(t)
+        exit(0)
+print(max(a)+1)
+
+
