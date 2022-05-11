@@ -1,0 +1,12 @@
+A number is considered perfect if its digits sum up to exactly 10.Given a positive integer n, return the n-th perfect number.For example, given 1, you should return 19. Given 2, you should return 28.
+
+n=int(input())
+c=1
+i=19
+while(c<n):
+    i+=1
+    s=sum(list(map(int, str(i))))
+    if(s==10):
+        c+=1 
+print(i)
+
